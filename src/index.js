@@ -374,11 +374,11 @@ formRec();
 const formModule = function(data){
 
 
-		var t = d3.transition()
+		let t = d3.transition()
     					.duration(750)
 							.ease(d3.easeLinear);
 
-		var form = d3.select("#putFormHere");
+		let form = d3.select("#putFormHere");
 
 		form.html('');//clear out the form
 
@@ -386,11 +386,11 @@ const formModule = function(data){
 			form.attr('class','form-inline');
 				// .attr('z-index',9999);
 
-		var top = form.append('text')
+		let top = form.append('text')
 				.text('Complete the form and press Submit')
 				.attr('id','topOfForm');
 
-		var p = form.selectAll("div")
+		let p = form.selectAll("div")
 
 				.data(data)
 				.enter()
@@ -398,9 +398,9 @@ const formModule = function(data){
 				.attr('class','form-group')
 				// .append("p")
 				.each(function(d){
-						var self = d3.select(this);
+						let self = d3.select(this);
 
-						var label = self.append("label")
+						let label = self.append("label")
 								.text(d.display)
 								.transition(t)
 								.attr('class',"wrapper-dropdown-label")
@@ -409,7 +409,7 @@ const formModule = function(data){
 								// .attr('class','label-default')
 
 						if(d.type == 'text'){
-								var input = self.append("input")
+								let input = self.append("input")
 										.attr({
 												type: function(d){ return d.type; },
 												name: function(d){ return d.name; }
@@ -417,7 +417,7 @@ const formModule = function(data){
 						}
 
 						if(d.type == 'dropdown'){
-						var select = self.append("select")
+						let select = self.append("select")
 										.attr("name", "country")
 										.attr("id",d.code)
 										.attr('class',"wrapper-dropdown-inside")
@@ -431,7 +431,7 @@ const formModule = function(data){
 						}
 
 						if(d.type == 'checkbox'){
-						var inputbox = self.append("input")
+						let inputbox = self.append("input")
 							.attr("type","radio")
 							.attr("id",d.code)
 						}
@@ -656,11 +656,6 @@ function parseMedicareData(d){
     npi: +d.npi,
     code: +d.hcpcs_code,
     codeDescription: d.hcpcs_description
-  //
-	// if(+d.Code >= 900 || dest_name === '') return;
-  //
-	// delete d.hcpcs_drug_indicator;
-  // delete d.nppes_entity_code;
   }
 }
 
