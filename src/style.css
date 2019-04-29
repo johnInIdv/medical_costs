@@ -1,0 +1,207 @@
+/* html,body,div{
+	margin:0;
+	padding:0;
+	background-color: #fbeeda;
+} */
+
+/* header {
+	z-index: 9999;
+} */
+.main{
+	/* width:960px; */
+	margin:auto;
+}
+
+.inputs {
+	width: 50%;
+	padding: 20px;
+	align-items: center;
+	display: inline-block;
+}
+
+.pick-problem{
+	width:25%;
+}
+
+#sliderExplain {
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#slider {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	display: none;
+}
+
+.module {height:600px;
+				width: 100%;
+				text-align: center;
+	-webkit-flex: 1;  /* Safari 6.1+ */
+	-ms-flex: 1;  /* IE 10 */
+	flex: 1;}
+
+.input {
+	margin-top: 15px;
+}
+
+.module {height:600px;
+				width: 100%;
+	-webkit-flex: 1;  /* Safari 6.1+ */
+	-ms-flex: 1;  /* IE 10 */
+	flex: 1;}
+
+.long{height:1500px;}
+.right{height: 500px;}
+.bar {
+	float: left;
+	width: 30px;
+	margin-right: 20px;
+	background-color: #eb5757;
+	border: 1px solid #888888;
+}
+
+.hidden {
+	display: none;
+	z-index: 9999;
+}
+
+.hiddendata {
+	display: none;
+	z-index: 9999;
+}
+
+#landPage{height:1400px;background-color: rgb(100,100,100);}
+h1{z-index: 9999; position: fixed; width: 100%;background-color: #888888; color:#ffffff;padding-top: 20px;padding-bottom: 20px; text-align: center;}
+
+
+text {
+	font-family: sans-serif;
+}
+
+.bar {
+	fill: cornflowerblue;
+}
+
+.bar:hover {
+	fill: pink;
+}
+
+.instruct_to_choose {
+	font-size: 30px;
+	padding: 10px;
+	color: black;
+}
+
+.axis--x path {
+	display: none;
+}
+
+.wrapper-flex-container {
+	/* display: none; */
+	background-color: pink;
+}
+
+#flexer {
+	display: none;
+}
+
+.var-labels {
+	/* background-color: pink; */
+	padding: 15px;
+	font-size: 20px;
+}
+
+.var-drops {
+	background-color: #F2F5F7;
+	color: black;
+	/* font-weight: bold; */
+	padding: 15px;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: grey;
+}
+
+.flex-container > div {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.wrapper-dropdown {
+    /* Size and position */
+    position: relative; /* Enable absolute positioning for children and pseudo elements */
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+		float: left;
+}
+
+#rec{
+	font-size: 20px;
+}
+
+
+.wrapper-dropdown-inside{
+/* Styles */
+/* background: #9bc7de; */
+display: inline-flex;
+color: red;
+outline: none;
+cursor: pointer;
+padding:10px;
+width: auto;
+/* Font settings */
+font-weight: bold;
+}
+.wrapper-dropdown-label{
+/* Styles */
+/* background: #9bc7de; */
+display: relative;
+color: black;
+outline: none;
+cursor: pointer;
+padding:10px;
+/* margin-left: 10px; */
+
+/* Font settings */
+font-weight: bold;
+}
+
+.form-group {
+	margin: 10px;
+	/* background-color: #F2F5F7; */
+}
+
+.newClass {
+	display: block;
+}
+
+.slider2 {
+	padding-bottom: 50px;
+}
+
+.axis {
+	font-size: 14px;
+}
+
+#topOfForm {
+	text-align: center;
+	background-color: #74bbea;
+	padding: 25px;
+	width: 100%;
+}
+
+.picture {
+ position:absolute;
+    top:0px;
+    left:0px;
+		width:400;
+		height:800;
+}
